@@ -10,20 +10,20 @@ function activate(context) {
 		const document = editor.document;
 	
 		if (editor) {
-			var firstLine = editor.document.lineAt(0);
-			var lastLine = editor.document.lineAt(editor.document.lineCount - 1);
-			var textRange = new vscode.Range(firstLine.range.start, lastLine.range.end);
-			var result = document.getText(textRange);
-			var index = 0;
-			while (result.indexOf("`@`") > 0) {
-			vscode.window.showInformationMessage(index);
-				result = result.replace("`@`", index.toString());
+			let firstLine = editor.document.lineAt(0);
+			let lastLine = editor.document.lineAt(editor.document.lineCount - 1);
+			let textRange = new vscode.Range(firstLine.range.start, lastLine.range.end);
+			let result = document.getText(textRange);
+			let index = 0;
+			while (result.indexOf('{@}') >= 0) {
+				result = result.replace("{@}", index.toString());
 				index++;
 			}
+			vscode.window.showInformationMessage(index.toString()+"개 변경됐습니다.");
 			editor.edit(doc => {
 				doc.replace(textRange, result);
 			});
-			// vscode.window.showInformationMessage(result);
+			deactivate();
 		}
 	});
 	
