@@ -1,7 +1,9 @@
 {
 	"name": "AutoIncreasement",
+	"publisher":"MINGKYME",
 	"displayName": "AutoIncreasement",
 	"description": "",
+	"repository":"https://github.com/mingkyme/AutoIncreasement-VSCode",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.53.0"
