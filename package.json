@@ -5,7 +5,7 @@
 	"description": "replace {@} to index++",
 	"repository": "https://github.com/mingkyme/AutoIncreasement-VSCode",
 	"icon": "images/icon.png",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"engines": {
 		"vscode": "^1.53.0"
 	},
