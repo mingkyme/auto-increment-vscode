@@ -1,7 +1,7 @@
 {
 	"name": "auto-increasement-vscode",
 	"publisher": "MINGKYME",
-	"displayName": "AutoIncreasement",
+	"displayName": "auto-increment",
 	"description": "replace {@} to index++",
 	"repository": "https://github.com/mingkyme/auto-increasement-vscode",
 	"icon": "images/icon.png",
@@ -13,14 +13,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:AutoIncreasement.Change"
+		"onCommand:auto-increment.Change"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "AutoIncreasement.Change",
-				"title": "AutoIncreasement: Change"
+				"command": "auto-increment.Change",
+				"title": "auto-increment: Change"
 			}
 		]
 	},

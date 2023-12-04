@@ -5,7 +5,7 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	let disposable = vscode.commands.registerCommand('AutoIncreasement.Change', async function () {
+	let disposable = vscode.commands.registerCommand('auto-increment.Change', async function () {
 		const editor = vscode.window.activeTextEditor;
 		const document = editor.document;
 		if (!editor) {
