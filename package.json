@@ -1,11 +1,11 @@
 {
-	"name": "AutoIncreasement",
+	"name": "auto-increasement-vscode",
 	"publisher": "MINGKYME",
 	"displayName": "AutoIncreasement",
 	"description": "replace {@} to index++",
-	"repository": "https://github.com/mingkyme/AutoIncreasement-VSCode",
+	"repository": "https://github.com/mingkyme/auto-increasement-vscode",
 	"icon": "images/icon.png",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"engines": {
 		"vscode": "^1.53.0"
 	},
